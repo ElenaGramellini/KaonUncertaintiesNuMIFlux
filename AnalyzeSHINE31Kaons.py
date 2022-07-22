@@ -35,8 +35,9 @@ df_KZeros = addColumns(df_KZeros)
 
 
 
-fig, (ax1,ax) = plt.subplots(1,2, figsize=(10, 6), gridspec_kw={'width_ratios': [1, 3]})
-ax.scatter(x = df_KPlus['x_F'] , y = df_KPlus['dKdThetadP']  , label="KPlus"      )
+#fig, (ax1,ax) = plt.subplots(1,2, figsize=(10, 6), gridspec_kw={'width_ratios': [1, 3]})
+fig, ax = plt.subplots(1,1, figsize=(10, 6))
+ax.scatter(x = df_KPlus.index , y = df_KPlus['dKdThetadP']  , label="KPlus"      )
 #ax.scatter(x = df_KMinus['x_F'], y = df_KMinus['dKdThetadP'] , label="KMinus"     )
 #ax.scatter(x = df_KZeros['x_F'], y = df_KZeros['dKdThetadP'] , label="KZeros"     )
 
